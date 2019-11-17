@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="zoohacc.MainPage"
+             BackgroundColor="#A0A0A0" >
+
+  
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="#858888"
+            Padding="10">
+            <Label Text="Мой профиль"
+                   FontSize="Large"
+                VerticalOptions="Start" 
+                   BackgroundColor="#C0E8D8"
+                HorizontalOptions="Center" FontAttributes="Bold" />
+            <StackLayout
+                Padding="30"
+                Spacing="20">
+                <Entry             
+                    x:Name="secondName"
+                    BackgroundColor="#C0D8CE"
+                    Placeholder="Фамилия" FontAttributes="Bold"/>
+                <Entry
+                    x:Name="firstName"
+                    BackgroundColor="#C0E8D8"
+                    Placeholder="Имя"/>
+                <Entry
+                    x:Name="thirdName"
+                    BackgroundColor="#C0E8D8"
+                    Placeholder="Отчество" FontAttributes="Bold"/>
+                <Entry
+                    x:Name="status"
+                    BackgroundColor="#C0E8D8"
+                    Placeholder="Должность" FontAttributes="Bold"/>
+                <Entry
+                    x:Name="workPlace"
+                    
+                    Placeholder="Место работы" FontAttributes="Bold" BackgroundColor="#C0E8D8"/>
+            </StackLayout>
+            <Button
+                FontSize="Medium"
+                VerticalOptions="EndAndExpand" 
+                HorizontalOptions="Center" 
+                Text="Сохранить изменения"        
+                CornerRadius="30"
+                Clicked="OnSaveButton_Clicked" BackgroundColor="#96C1C3" FontAttributes="Bold"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
