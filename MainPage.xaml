@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="zoohacc.MainPage"
+             BackgroundImageSource="desktop.jpg">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="My Profile"
+                 Clicked="EditProfile_Clicked"
+                 Order="Primary"
+                 Priority="0" />
+    </ContentPage.ToolbarItems>
+    <StackLayout
+        Padding="20" >
+        <Label Text="Watch Them Step" 
+               FontSize="Header"
+               FontAttributes="Bold"
+               FontFamily="fantasy"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="StartAndExpand"        
+               />
+        <Button
+            Text="login"
+            FontSize="Large"
+            FontAttributes="Bold"
+            FontFamily="sans-serif"
+            InputTransparent="True"
+            Padding="20"
+            BackgroundColor="#84BECA" 
+            CornerRadius="30" Opacity="0.90"
+            />
+        <Button
+            x:Name="CreateNewItem"
+            Text="Sign up"
+            Clicked="OnNewItem_Clicked" 
+            FontSize="Subtitle" 
+            InputTransparent="True"
+            CornerRadius="30"
+            />
+    </StackLayout>
+</ContentPage>
